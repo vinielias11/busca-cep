@@ -1,0 +1,31 @@
+.container-input {
+    margin-top: 100px;
+}
+
+.cep-input {
+    padding: 14px 32px 14px 16px;
+    border-radius: 4px;
+    outline: none;
+    border: 0;
+    width: 320px;
+    border: 2px solid #5d0cff;
+    background: transparent;
+}
+
+.botao-pesquisa {
+    padding: 10px;
+    border: none;
+    border-radius: 0 4px 4px 0;
+    cursor: pointer;
+    outline: none;
+    background: linear-gradient(
+      90deg,
+      rgba(93, 12, 255, 1) 0%,
+      rgba(155, 0, 250, 1) 100%
+    );
+    color: #fff;
+}
+
+.cep-input::placeholder {
+    color: #e2e2e2;
+  }

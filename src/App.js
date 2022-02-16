@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './App.css';
 import ContainerInput from './components/ContainerInput/ContainerInput';
-import ContainerCep from './components/ContainerCep/ContainerCep';
+import ContainerInfo from './components/ContainerInfo/ContainerInfo';
 
 function App() {
   const [input, setInput] = useState('');
@@ -21,14 +21,14 @@ function App() {
   }
 
   return (
-    <>
+    <div className='container'>
       <ContainerInput 
         onClick={onClickPesquisar} 
         onChange={onChangeInput}
         valor={input} 
       />
-      <ContainerCep response={response}/>
-    </>
+      <ContainerInfo response={response}/>
+    </div>
   );
 }
 

@@ -1,8 +1,9 @@
 import React from 'react';
+import './ContainerInfo.css'
 
 const ContainerCep = ({ response }) => {
   return (
-    <div>
+    <div className='container-info'>
       <span>{response.bairro}</span>
       <span>{response.cep}</span>
       <span>{response.complemento}</span>
@@ -10,7 +11,7 @@ const ContainerCep = ({ response }) => {
       <span>{response.localidade}</span>
       <span>{response.logradouro}</span>
     </div>
-  )
-}
+  );
+};
 
 export default ContainerCep;
