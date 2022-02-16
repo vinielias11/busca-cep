@@ -1,24 +1,18 @@
-import logo from './logo.svg';
+import React, { useEffect, useState } from 'react';
 import './App.css';
+import ContainerInput from './components/ContainerInput/ContainerInput';
 
 function App() {
+  const [input, setInput] = useState('');
+
+  // useEffect(() => {
+  //   fetch('https://viacep.com.br/ws/88803200/json/',)
+  // })
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <ContainerInput>
+      
+    </ContainerInput>
   );
 }
 
