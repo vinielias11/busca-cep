@@ -10,7 +10,7 @@ const ContainerInput = ({ valor, onChange, onClick }) => {
         placeholder="Digite um cep..."
         onChange={onChange}
       />
-      <button onClick={onClick}>Pesquisar</button>
+      <button className='botao-pesquisa' onClick={onClick}>Pesquisar</button>
     </div>
   )
 }
