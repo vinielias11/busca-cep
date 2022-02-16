@@ -1,18 +1,34 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import './App.css';
 import ContainerInput from './components/ContainerInput/ContainerInput';
+import ContainerCep from './components/ContainerCep/ContainerCep';
 
 function App() {
   const [input, setInput] = useState('');
+  const [response, setResponse] = useState({});
 
-  // useEffect(() => {
-  //   fetch('https://viacep.com.br/ws/88803200/json/',)
-  // })
+  const onClickPesquisar = async () => {
+    if (input === '') return;
+
+    const dados = await fetch(`https://viacep.com.br/ws/${input}/json/`).then(resp => resp.json());
+    
+    setResponse(dados);
+    setInput('');
+  }
+
+  const onChangeInput = e => {
+    setInput(e.target.value);
+  }
 
   return (
-    <ContainerInput>
-      
-    </ContainerInput>
+    <>
+      <ContainerInput 
+        onClick={onClickPesquisar} 
+        onChange={onChangeInput}
+        valor={input} 
+      />
+      <ContainerCep response={response}/>
+    </>
   );
 }
 

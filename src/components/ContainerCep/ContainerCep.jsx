@@ -1,8 +1,15 @@
 import React from 'react';
 
-const ContainerCep = () => {
+const ContainerCep = ({ response }) => {
   return (
-    <div>ContainerCep</div>
+    <div>
+      <span>{response.bairro}</span>
+      <span>{response.cep}</span>
+      <span>{response.complemento}</span>
+      <span>{response.ddd}</span>
+      <span>{response.localidade}</span>
+      <span>{response.logradouro}</span>
+    </div>
   )
 }
 

@@ -1,8 +1,17 @@
 import React from 'react'
+import './ContainerInput.css'
 
-const ContainerInput = ({ cep,  }) => {
+const ContainerInput = ({ valor, onChange, onClick }) => {
   return (
-    <input type="text" />
+    <div className='container-input'>
+      <input 
+        type="text"
+        value={valor}
+        placeholder="Digite um cep..."
+        onChange={onChange}
+      />
+      <button onClick={onClick}>Pesquisar</button>
+    </div>
   )
 }
 
