@@ -1,0 +1,15 @@
+.container-info {
+    margin-top: 50px;
+    color: #fff;
+    font-size: 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 200px;
+    border-radius: 10px;
+    width: 85%;
+    padding: 10px;
+
+    background: #2b7c85b4;
+    
+}

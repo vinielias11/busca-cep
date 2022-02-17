@@ -8,7 +8,9 @@ function App() {
   const [response, setResponse] = useState({});
 
   const onClickPesquisar = async () => {
-    if (input === '') return;
+    if (!validaCepValido(input)) {
+      alert('Informe um CEP válido!');
+    }
 
     const dados = await fetch(`https://viacep.com.br/ws/${input}/json/`).then(resp => resp.json());
     
@@ -16,15 +18,20 @@ function App() {
     setInput('');
   }
 
-  const onChangeInput = e => {
-    setInput(e.target.value);
+  const validaCepValido = (cep) => {
+    if (cep === '' || cep.length > 8 || cep.length < 8) {
+      return false;
+    }
+    
+    return true;
   }
 
   return (
     <div className='container'>
+      <h1 className='titulo'>Consulta de CEP</h1>
       <ContainerInput 
         onClick={onClickPesquisar} 
-        onChange={onChangeInput}
+        onChange={(e) => setInput(e.target.value)}
         valor={input} 
       />
       <ContainerInfo response={response}/>

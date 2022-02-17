@@ -6,7 +6,7 @@ const ContainerInput = ({ valor, onChange, onClick }) => {
     <div className='container-input'>
       <input 
         className='cep-input'
-        type="text"
+        type="number"
         value={valor}
         placeholder="Digite um cep..."
         onChange={onChange}
