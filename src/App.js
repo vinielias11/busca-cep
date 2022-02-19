@@ -5,13 +5,13 @@ import ContainerInfo from './components/ContainerInfo/ContainerInfo';
 
 function App() {
   const [input, setInput] = useState('');
-  const [response, setResponse] = useState({});
+  const [response, setResponse] = useState(null);
 
   const onClickPesquisar = async () => {
     if (!validaCepValido(input)) {
       alert('Informe um CEP válido!');
     }
-
+    
     const dados = await fetch(`https://viacep.com.br/ws/${input}/json/`).then(resp => resp.json());
     
     setResponse(dados);

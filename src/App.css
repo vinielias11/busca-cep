@@ -3,20 +3,15 @@
     flex-direction: column;
     justify-content: flex-start;
     width: 520px;
-    min-height: 550px;
-    background: linear-gradient(
-      90deg,
-      #050A30 0%,
-      #101d7e 100%
-    );
+    min-height: 500px;
+    background: #f5f7fb;
     text-align: center;
     margin: 5% auto;
-    border-radius: 10px;
+    border-radius: 20px;
     padding-bottom: 32px;
     align-items: center;
 }
 
 .titulo {
-    color: #fff;
     margin-top: 50px;
 }

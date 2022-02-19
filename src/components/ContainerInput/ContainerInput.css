@@ -8,9 +8,8 @@
     outline: none;
     border: 0;
     width: 320px;
-    border: 2px solid rgb(1, 47, 172);
+    border: 2px solid #012fac;
     background: transparent;
-    color: #fff;
 }
 
 input::-webkit-inner-spin-button {
@@ -20,17 +19,9 @@ input::-webkit-inner-spin-button {
 .botao-pesquisa {
     padding: 16px;
     border: none;
-    border-radius: 0 4px 4px 0;
+    border-radius: 4px;
     cursor: pointer;
     outline: none;
-    background: linear-gradient(
-      90deg,
-      rgb(1, 47, 172) 0%,
-      rgba(72, 89, 241, 0.753) 100%
-    );
+    background: #012fac;
     color: #fff;
 }
-
-.cep-input::placeholder {
-    color: #e2e2e2;
-  }

@@ -1,6 +1,5 @@
 .container-info {
     margin-top: 50px;
-    color: #fff;
     font-size: 24px;
     display: flex;
     flex-direction: column;
@@ -10,6 +9,21 @@
     width: 85%;
     padding: 10px;
 
-    background: #2b7c85b4;
+    background: #d4cdcd;
+    
+}
+
+.container-no-info {
+    margin-top: 50px;
+    font-size: 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 150px;
+    border-radius: 10px;
+    width: 85%;
+    padding: 10px;
+
+    background: #d4cdcd;
     
 }
