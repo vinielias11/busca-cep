@@ -16,7 +16,13 @@ function App() {
     
     setResponse(dados);
     setInput('');
-  }
+  };
+
+  const onEnter = e => {
+    if (e.key === 'Enter') {
+      onClickPesquisar();
+    }
+  };
 
   const validaCepValido = (cep) => {
     if (cep === '' || cep.length > 8 || cep.length < 8) {
@@ -32,6 +38,7 @@ function App() {
       <ContainerInput 
         onClick={onClickPesquisar} 
         onChange={(e) => setInput(e.target.value)}
+        onKeyPress={onEnter}
         valor={input} 
       />
       <ContainerInfo response={response}/>
