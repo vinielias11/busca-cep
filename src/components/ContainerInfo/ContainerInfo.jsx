@@ -14,7 +14,6 @@ const ContainerInfo = ({ response }) => {
       </div>
     );
   };
-  debugger
 
   return (
     <div className='container-no-info'>
