@@ -4,11 +4,13 @@
 
 .cep-input {
     padding: 14px 20px 14px 10px;
-    border-radius: 4px;
-    outline: none;
-    border: 0;
-    width: 320px;
     border: 2px solid #012fac;
+    border-radius: 4px;
+
+    outline: none;
+
+    width: 320px;
+
     background: transparent;
 }
 
@@ -20,8 +22,10 @@ input::-webkit-inner-spin-button {
     padding: 16px;
     border: none;
     border-radius: 4px;
+    
     cursor: pointer;
     outline: none;
+
     background: #012fac;
     color: #fff;
 }
